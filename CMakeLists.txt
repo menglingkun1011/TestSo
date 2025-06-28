@@ -31,3 +31,7 @@ include(${CMAKE_TOOLCHAIN_FILE})
 
 # 添加共享库
 add_library(TestSo SHARED src/native-lib.cpp)
+
+target_link_libraries(${CMAKE_PROJECT_NAME}
+        android
+        log)
